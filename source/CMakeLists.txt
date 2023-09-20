@@ -18,6 +18,7 @@ file(GLOB_RECURSE SOURCE CONFIGURE_DEPENDS
   track/*.cc
   tracking/*.cc
   visualization/*.cc
+  chroma/*.cc
 )
 
 pybind11_add_module(geant4_pybind

@@ -68,6 +68,7 @@ void export_modG4tracking(py::module &);
 void export_modG4visualization(py::module &);
 void export_modG4persistency(py::module &);
 void export_modG4analysis(py::module &);
+void export_Chroma(py::module &);
 
 PYBIND11_MODULE(geant4_pybind, m)
 {
@@ -89,6 +90,7 @@ PYBIND11_MODULE(geant4_pybind, m)
    export_modG4visualization(m);
    export_modG4persistency(m);
    export_modG4analysis(m);
+   export_Chroma(m);
 
    G4UImanager::GetUIpointer();
    static G4PyCoutDestination pycout = G4PyCoutDestination();
